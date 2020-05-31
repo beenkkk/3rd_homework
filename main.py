@@ -7,7 +7,7 @@ data = requests.get('https://www.genie.co.kr/chart/top200?ditc=D&ymd=20200403&hh
 
 # HTML을 BeautifulSoup이라는 라이브러리를 활용해 검색하기 용이한 상태로 만듦
 # soup이라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
-# 이제 코딩을 통해 필요한 부분을 추출하면 된다. = 스크래핑
+# 이제 코딩을 통해 필요한 부분을 추출하면 된다. = 스크래핑   
 soup = BeautifulSoup(data.text, 'html.parser')
 
 #############################
